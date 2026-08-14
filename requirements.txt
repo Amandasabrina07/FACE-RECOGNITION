@@ -1,0 +1,4 @@
+# LBPH requires the OpenCV Contrib build because cv2.face is not included
+# in the standard opencv-python package.
+opencv-contrib-python
+numpy
