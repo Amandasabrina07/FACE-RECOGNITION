@@ -15,20 +15,6 @@ The repository is a cleaned and privacy-safe version of an academic prototype. R
 - CLI configuration instead of hard-coded local paths and IP addresses
 - Privacy-first repository structure for public GitHub use
 
-## System Architecture
-
-```mermaid
-flowchart LR
-    A[ESP32-CAM] -->|JPEG /capture over Wi-Fi| B[Python Client]
-    B --> C[Haar Cascade Face Detection]
-    C --> D[Dataset Capture]
-    D --> E[LBPH Training]
-    E --> F[trainer.yml]
-    B --> G[Real-time Recognition]
-    F --> G
-    H[people.json] --> G
-```
-
 ## Repository Structure
 
 ```text
